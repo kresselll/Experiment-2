@@ -1,0 +1,65 @@
+//A program that accepts two integers x and y from the kbd.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int x, y;
+	double z, V; 
+	z = 2.5;
+	cout.precision(2);
+	
+	
+	cout << "Enter value of x: " << endl; 
+    cin >> x;
+	cout << "Enter value of y: " << endl;
+	  cin >> y;
+	
+
+	switch (x)
+	{	
+		case 1:
+		
+		if(y > 1 && y < 5)
+		
+		{
+		  V = x * y * z;
+		  cout << "V= " << V << endl;
+		}	
+		
+		else // (y >= 5)
+		{
+	  	V = x + (y / z);
+	  	cout << "V= " << V << endl;
+		}
+		break;
+		
+		case 2:
+		
+		if (y <= 5)
+		{
+			V = abs((x-y)/z);
+			cout << "V= " << V << endl;
+		}
+		
+		else // y > 5 
+		{
+			V = x - (sqrt(y+z));
+			cout << "V= " << V << endl;
+		}
+		break;
+		
+	}
+
+  	if(x>2) 
+	  {
+	  	V = x+y+z;
+	  	cout << "V= " << V << endl;
+  	}
+	
+return 0;
+		
+}
