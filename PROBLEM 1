@@ -1,0 +1,51 @@
+//A program that calculates a customer’s monthly bill, asks which package the customer has purchased and how many hours were used. 
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+	int price, choice, hours;
+	cout<<"Internet Subsciption Packages: \n";
+	
+	cout<<"\n  1. Package A: For P995/mo 10 hrs of access are provided.";
+	cout<<"\n\t     Additional hours are P20/hr.";
+
+	cout<<"\n\n  2. Package B: For P1495/mo 20 hrs of access are provided.";
+	cout<<"\n\t     Additional hours are P10/hr.";
+
+	cout<<"\n\n  3. Package C: For P1995/mo of unlimited access is provided."<<endl;
+
+	cout<<"\n  Choose a Subscription Package (1-3): "<<endl;
+
+cin>> choice ;
+
+cout<< "\n  Hours Used:" << endl;
+
+cin>> hours ;
+
+
+if (choice == 1)
+		{
+			price = 995;
+			cout << "\n  Total Monthly Bill: " << price + (hours - 10) * 20<< endl;
+			cout << "\n  Thanks for Subscribing!" << endl;
+		}
+else if (choice == 2) 
+		{
+			price = 1495;
+			cout << "\n  Total Monthly Bill: " << price + (hours - 20) * 10 << endl;
+			cout << "\n  Thanks for Subscribing!" << endl;
+		}
+		
+else if (choice == 3)
+		{
+		
+			price = 1995;
+			cout << "\n  Total Monthly Bill: " << price << endl;
+			cout << "\n  Thank you for Subscribing!" << endl;
+		}
+	return 0;	
+		
+}
