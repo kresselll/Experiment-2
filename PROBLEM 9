@@ -1,0 +1,24 @@
+//A program that draws a box using “*” characters given its dimensions in rows and columns.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,d;
+    cout<<"Number of rows: ";
+    cin>>a;
+    cout<<"Number of columns: ";
+    cin>>b;
+    
+    for (c = 1; c <= a; c++)
+    {
+        for (d = 1; d <= b; d++)
+        {
+            cout << "* ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
