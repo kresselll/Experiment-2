@@ -1,0 +1,40 @@
+//A program that will accept three numbers as input and display the LARGEST number of the three.
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int num1, num2, num3;
+
+   cout << "Enter first number: " << endl;
+      cin >> num1;
+
+   cout << "Enter second number: " << endl;
+     cin >> num2;
+
+   cout << "Enter third number: " << endl;
+     cin >> num3;
+
+  if (num1 < num2 && num2 > num3)
+	
+  	cout << "The LARGEST of the three numbers is " << num2 << endl;
+	
+  else if (num1 > num2 && num2 > num3)
+	
+		cout << "The LARGEST of the three numbers is " << num1 <<  endl;
+	
+  else if (num1 < num2 && num2 < num3)
+	
+		cout << "The LARGEST of the three numbers is " << num3 << endl;
+		
+  else if (num1 > num2 && num2 < num3 && num3 < num1)
+	
+		cout << "The LARGEST of the three numbers is " << num1 << endl;
+
+  else if (num1 > num2 && num2 < num3 && num3 > num1)
+	
+		cout << "The LARGEST of the three numbers is " << num3 << endl;
+	
+return 0;
+}
