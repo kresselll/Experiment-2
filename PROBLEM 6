@@ -1,0 +1,33 @@
+//A program that will output the NEXT 20 Fibonacci numbers (after 0 and 1) in one line, separated by commas. 
+
+#include <iostream>  
+using namespace std;  
+
+int main() 
+{  
+  int x, next, nseries, first, second;
+  
+  first = 0;
+  second = 1;
+  
+  cout << "Enter desired number of terms of the Fibonacci sequence: " << endl;
+    cin >> nseries ;
+  
+  cout << "The " << nseries << " Fibonacci numbers are: " << endl;
+  
+  for ( x = 0 ; x < nseries ; x++)
+	{
+		if (x <= 1)
+		next = x;
+		else
+		{
+			next = first + second;
+			first = second;
+			second = next;
+		}
+	cout << next << " ";
+	}
+  
+	return 0;
+	  
+}
